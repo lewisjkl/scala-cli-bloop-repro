@@ -16,4 +16,5 @@ jobs:
       
       - name: Update Data
         run: |
+          cs fetch --no-default -r central ch.epfl.scala::bloop-frontend:2.0.17
           scala-cli run test.sc
